@@ -140,6 +140,33 @@
     color: #00e5ff;
 }
 
+/* PROFILE IMAGE */
+
+.profile-circle {
+    width: 68px;
+    height: 68px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 2px solid #00e5ff;
+
+    box-shadow:
+      0 0 20px rgba(0,229,255,0.25);
+
+    transition: 0.3s ease;
+}
+
+.profile-circle:hover {
+    transform: scale(1.05);
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* HERO */
 
 .hero-container {
