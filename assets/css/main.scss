@@ -51,10 +51,19 @@
 .custom-homepage {
     margin: 0;
     padding: 0;
+    height: 100vh;
     overflow: hidden;
     background: #05070b;
     color: #ffffff;
     font-family: 'Inter', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #05070b;
 }
 
 /* REMOVE JEKYLL CONSTRAINTS */
@@ -123,6 +132,22 @@
     to {
         transform: translateY(60px);
     }
+}
+
+/* PARTICLE NETWORK */
+
+#particle-network {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+
+    opacity: 0.45;
+
+    pointer-events: none;
 }
 
 /* NAVBAR */
