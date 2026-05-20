@@ -199,8 +199,8 @@
 
 .hero-title {
     font-family: 'Orbitron', sans-serif;
-    font-size: 4.8rem;
-    line-height: 1.05;
+    font-size: 4.2rem;
+    line-height: 1.0;
     margin-bottom: 35px;
     letter-spacing: 2px;
     font-weight: 500;
@@ -226,15 +226,19 @@
 }
 
 .hero-btn {
-    padding: 18px 34px;
+    padding: 15px 28px;
     border-radius: 10px;
 
     text-decoration: none;
 
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     letter-spacing: 1px;
     font-weight: 500;
     text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
 
     transition: 0.3s ease;
 }
@@ -307,10 +311,11 @@
 }
 
 .skill span {
-    font-size: 1rem;
+    font-size: .9rem;
     color: white;
 }
 
 .skill small {
     color: #888;
+    font-size: 0.78rem;
 }
