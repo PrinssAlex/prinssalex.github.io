@@ -387,12 +387,17 @@ body {
 .skill i {
     color: #00e5ff;
 
-    font-size: 1.6rem;
-
-    margin-bottom: 8px;
+    font-size: 1.8rem;
 
     filter:
       drop-shadow(0 0 12px rgba(0,229,255,0.25));
+} 
+
+.lime-skill i {
+    color: #d4ff00;
+
+    filter:
+      drop-shadow(0 0 12px rgba(212,255,0,0.25));
 }
 
 /* ROBOT WAVE */
@@ -481,14 +486,19 @@ body {
 
 .skill {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 18px;
 
     position: relative;
 
-    gap: 6px;
+    min-width: 220px;
+}
 
-    min-width: 170px;
-} 
+.skill-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 .skill::after {
 
@@ -511,11 +521,12 @@ body {
 }
 
 .skill span {
-    font-size: .9rem;
+    font-size: 0.95rem;
     color: white;
+    letter-spacing: 0.5px;
 }
 
 .skill small {
-    color: #888;
-    font-size: 0.78rem;
+    color: #7d7d7d;
+    font-size: 0.8rem;
 }
