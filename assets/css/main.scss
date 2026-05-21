@@ -287,6 +287,48 @@ body {
     max-width: 500px;
 }
 
+/* HERO LEFT DECORATION */
+
+.hero-left {
+    max-width: 620px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.hero-line {
+    position: absolute;
+
+    left: 0;
+    top: -40px;
+
+    width: 1px;
+    height: 520px;
+
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.4),
+        rgba(255,255,255,0.05)
+      );
+}
+
+.hero-dot {
+    position: absolute;
+
+    left: -5px;
+    top: 310px;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #00e5ff;
+
+    box-shadow:
+      0 0 20px rgba(0,229,255,0.9);
+}
+
 /* BUTTONS */
 
 .hero-buttons {
