@@ -377,6 +377,8 @@ body {
 .hero-right img {
     width: 150%;
     max-width: 560px;
+    position: relative;
+    z-index: 2;
     /*max-width: 760px;*/
     /*transform: translateY(-30px);*/
 
@@ -384,10 +386,13 @@ body {
       drop-shadow(0 0 40px rgba(0,229,255,0.15));
 }
 
+
+
 .skill i {
     color: #00e5ff;
 
-    font-size: 1.8rem;
+    font-size: .65rem;
+   font-weight: 200px;
 
     filter:
       drop-shadow(0 0 12px rgba(0,229,255,0.25));
@@ -409,54 +414,97 @@ body {
     position: relative;
 }
 
+/* ROBOT ENERGY WAVE */
+
 .robot-wave {
+
     position: absolute;
 
-    width: 850px;
-    height: 850px;
+    bottom: -120px;
+
+    width: 900px;
+    height: 900px;
 
     border-radius: 50%;
 
     background:
       radial-gradient(
-        circle,
-        rgba(0,229,255,0.12) 0%,
-        rgba(0,229,255,0.05) 25%,
+        ellipse at center,
+        rgba(0,229,255,0.22) 0%,
+        rgba(0,229,255,0.10) 18%,
+        rgba(0,229,255,0.04) 35%,
         transparent 65%
       );
 
-    filter: blur(2px);
-
     transform:
-      translateY(220px)
-      scaleY(0.22);
+      scaleY(0.16);
+
+    filter:
+      blur(1px);
+
+    opacity: 0.9;
+
+    z-index: 0;
 
     animation:
-      pulseWave 6s ease-in-out infinite;
-
-    z-index: 1;
+      pulseWave 7s ease-in-out infinite;
 }
+
+/* SECONDARY RINGS */
+
+.robot-wave::before,
+.robot-wave::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: 50%;
+
+    border:
+      1px solid rgba(0,229,255,0.10);
+}
+
+.robot-wave::before {
+
+    transform:
+      scale(1.15);
+
+    opacity: 0.5;
+}
+
+.robot-wave::after {
+
+    transform:
+      scale(1.32);
+
+    opacity: 0.25;
+}
+
+/* ANIMATION */
 
 @keyframes pulseWave {
 
     0% {
+
         transform:
-          translateY(220px)
-          scaleY(0.22)
+          scaleY(0.16)
           scaleX(1);
     }
 
     50% {
+
         transform:
-          translateY(220px)
-          scaleY(0.24)
+          scaleY(0.18)
           scaleX(1.04);
     }
 
     100% {
+
         transform:
-          translateY(220px)
-          scaleY(0.22)
+          scaleY(0.16)
           scaleX(1);
     }
 }
@@ -521,12 +569,12 @@ body {
 }
 
 .skill span {
-    font-size: 0.95rem;
+    font-size: 0.65rem;
     color: white;
     letter-spacing: 0.5px;
 }
 
 .skill small {
     color: #7d7d7d;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
 }
