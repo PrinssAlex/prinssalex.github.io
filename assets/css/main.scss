@@ -237,7 +237,7 @@ body {
 
     align-items: center;
 
-    padding: 20px 80px 0 80px;
+    padding: 0px 80px 0 80px;
 
     position: relative;
     z-index: 2;
@@ -260,7 +260,7 @@ body {
     font-family: 'Orbitron', sans-serif;
     font-size: 4.2rem;
     line-height: 1.0;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     letter-spacing: 2px;
     font-weight: 500;
 }
@@ -282,7 +282,7 @@ body {
 .hero-description {
     color: #a0a0a0;
     font-size: 1rem;
-    line-height: 1.8;
+    /*line-height: 1.8; */
     margin-bottom: 10px;
     max-width: 500px;
 }
