@@ -402,8 +402,13 @@ body {
 
 .skill i {
     color: #00e5ff;
-    font-size: 1.4rem;
-    margin-bottom: 10px;
+
+    font-size: 1.6rem;
+
+    margin-bottom: 8px;
+
+    filter:
+      drop-shadow(0 0 12px rgba(0,229,255,0.25));
 }
 
 /* ROBOT WAVE */
@@ -471,22 +476,54 @@ body {
 
 .skills-bar {
     width: 100%;
-    height: 100px;
+    height: 110px;
 
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255,255,255,0.06);
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     position: relative;
     z-index: 3;
+
+    background:
+      linear-gradient(
+        to top,
+        rgba(0,0,0,0.25),
+        transparent
+      );
 }
 
 .skill {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+
+    position: relative;
+
+    gap: 6px;
+
+    min-width: 170px;
+} 
+
+.skill::after {
+
+    content: "";
+
+    position: absolute;
+
+    right: -40px;
+    top: 5px;
+
+    width: 1px;
+    height: 55px;
+
+    background:
+      rgba(255,255,255,0.08);
+}
+
+.skill:last-child::after {
+    display: none;
 }
 
 .skill span {
