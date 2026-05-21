@@ -406,6 +406,67 @@ body {
     margin-bottom: 10px;
 }
 
+/* ROBOT WAVE */
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.robot-wave {
+    position: absolute;
+
+    width: 850px;
+    height: 850px;
+
+    border-radius: 50%;
+
+    background:
+      radial-gradient(
+        circle,
+        rgba(0,229,255,0.12) 0%,
+        rgba(0,229,255,0.05) 25%,
+        transparent 65%
+      );
+
+    filter: blur(2px);
+
+    transform:
+      translateY(220px)
+      scaleY(0.22);
+
+    animation:
+      pulseWave 6s ease-in-out infinite;
+
+    z-index: 1;
+}
+
+@keyframes pulseWave {
+
+    0% {
+        transform:
+          translateY(220px)
+          scaleY(0.22)
+          scaleX(1);
+    }
+
+    50% {
+        transform:
+          translateY(220px)
+          scaleY(0.24)
+          scaleX(1.04);
+    }
+
+    100% {
+        transform:
+          translateY(220px)
+          scaleY(0.22)
+          scaleX(1);
+    }
+}
+
 /* SKILLS */
 
 .skills-bar {
