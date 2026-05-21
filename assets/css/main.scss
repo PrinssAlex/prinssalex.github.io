@@ -293,23 +293,7 @@ body {
     max-width: 620px;
     position: relative;
     padding-left: 40px;
-}
-
-.hero-line {
-    position: relative;
-
-    left: 0;
-    top: -40px;
-
-    width: 1px;
-    height: 520px;
-
-    background:
-      linear-gradient(
-        to bottom,
-        rgba(255,255,255,0.4),
-        rgba(255,255,255,0.05)
-      );
+    border-left: 1px solid rgba(255,255,255,0.4);
 }
 
 .hero-dot {
