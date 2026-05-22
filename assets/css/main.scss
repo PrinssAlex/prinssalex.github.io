@@ -391,7 +391,7 @@ body {
 .skill i {
     color: #00e5ff;
 
-    font-size: .85rem;
+    font-size: 1rem;
     font-weight: 200px;
 
     filter:
@@ -412,101 +412,6 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-}
-
-/* ROBOT ENERGY WAVE */
-
-.robot-wave {
-
-    position: absolute;
-
-    bottom: -120px;
-
-    width: 900px;
-    height: 900px;
-
-    border-radius: 50%;
-
-    background:
-      radial-gradient(
-        ellipse at center,
-        rgba(0,229,255,0.22) 0%,
-        rgba(0,229,255,0.10) 18%,
-        rgba(0,229,255,0.04) 35%,
-        transparent 65%
-      );
-
-    transform:
-      scaleY(0.16);
-
-    filter:
-      blur(1px);
-
-    opacity: 0.9;
-
-    z-index: 0;
-
-    animation:
-      pulseWave 7s ease-in-out infinite;
-}
-
-/* SECONDARY RINGS */
-
-.robot-wave::before,
-.robot-wave::after {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    border-radius: 50%;
-
-    border:
-      1px solid rgba(0,229,255,0.10);
-}
-
-.robot-wave::before {
-
-    transform:
-      scale(1.15);
-
-    opacity: 0.5;
-}
-
-.robot-wave::after {
-
-    transform:
-      scale(1.32);
-
-    opacity: 0.25;
-}
-
-/* ANIMATION */
-
-@keyframes pulseWave {
-
-    0% {
-
-        transform:
-          scaleY(0.16)
-          scaleX(1);
-    }
-
-    50% {
-
-        transform:
-          scaleY(0.18)
-          scaleX(1.04);
-    }
-
-    100% {
-
-        transform:
-          scaleY(0.16)
-          scaleX(1);
-    }
 }
 
 /* SKILLS */
