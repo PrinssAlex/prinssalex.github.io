@@ -520,8 +520,20 @@ body {
 
 @media screen and (max-width: 900px) {
 
-    .custom-navbar {
+   /* .custom-navbar {
         padding: 0 40px;
+    }*/
+
+    .custom-navbar {
+
+        flex-direction: column;
+
+        height: auto;
+
+        gap: 20px;
+
+        padding:
+          25px 20px;
     }
 
     .hero-container {
@@ -644,7 +656,7 @@ body {
     .hero-container {
 
         padding:
-          20px 20px 160px 20px;
+          20px 20px 1px 20px;
     }
 
     .hero-title {
