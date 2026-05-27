@@ -34,29 +34,63 @@ permalink: /projects/
   <canvas id="particle-network"></canvas>
 
   <!-- NAVBAR -->
-  <nav class="custom-navbar">
+<nav class="custom-navbar">
 
-    <div class="logo">
-      <span>PA</span><span class="logo-o">O</span>
-    </div>
+  <a href="/" class="logo">
+    <span>PA</span><span class="logo-o">O</span>
+  </a>
 
-    <ul class="nav-links">
+  <ul class="nav-links">
 
-      <li><a href="/research/">Research</a></li>
-      <li><a class="active-link" href="/projects/">Projects</a></li>
-      <li><a href="/publications/">Publications</a></li>
-      <li><a href="/media/">Media</a></li>
-      <li><a href="/notes/">Notes</a></li>
-      <li><a href="/cv/">CV</a></li>
-      <li><a href="/contact/">Contact</a></li>
+    <li>
+      <a href="/research/">
+        Research
+      </a>
+    </li>
 
-    </ul>
+    <li>
+      <a class="active-link" href="/projects/">
+        Projects
+      </a>
+    </li>
 
-    <div class="profile-circle">
-      <img src="/images/profile.png" alt="Profile">
-    </div>
+    <li>
+      <a href="/publications/">
+        Publications
+      </a>
+    </li>
 
-  </nav>
+    <li>
+      <a href="/media/">
+        Media
+      </a>
+    </li>
+
+    <li>
+      <a href="/notes/">
+        Notes
+      </a>
+    </li>
+
+    <li>
+      <a href="/cv/">
+        CV
+      </a>
+    </li>
+
+    <li>
+      <a href="/contact/">
+        Contact
+      </a>
+    </li>
+
+  </ul>
+
+  <div class="profile-circle">
+    <img src="/images/profile.png" alt="Profile">
+  </div>
+
+</nav>
 
   <!-- HERO -->
   <section class="projects-hero">
@@ -90,19 +124,31 @@ permalink: /projects/
   </section>
 
   <!-- FEATURED PROJECT -->
-  <section class="featured-project">
+<section class="featured-project">
 
+  <div class="featured-header">
+
+    <span>
+      FEATURED PROJECT
+    </span>
+
+  </div>
+
+  <div class="featured-grid">
+
+    <!-- IMAGE -->
     <div class="featured-image">
 
       <img src="/images/featured-project.png" alt="Featured Project">
 
     </div>
 
+    <!-- CONTENT -->
     <div class="featured-content">
 
-      <span class="featured-label">
+      <div class="featured-label">
         AUTONOMOUS ROVER SYSTEM
-      </span>
+      </div>
 
       <h2>
         ROS2 Autonomous Rover
@@ -110,15 +156,17 @@ permalink: /projects/
 
       <p>
         A robust autonomous ground vehicle built with ROS2
-        for navigation, perception, and intelligent decision making.
+        for navigation, perception, and intelligent decision
+        making in unstructured environments.
       </p>
 
       <div class="tech-tags">
 
         <span>ROS2</span>
         <span>SLAM</span>
-        <span>LiDAR</span>
         <span>NAV2</span>
+        <span>LiDAR</span>
+        <span>MPC</span>
         <span>C++</span>
 
       </div>
@@ -126,14 +174,17 @@ permalink: /projects/
       <div class="project-buttons">
 
         <a href="#" class="project-btn cyan-btn">
+          <i class="fas fa-play-circle"></i>
           Demo
         </a>
 
         <a href="#" class="project-btn outline-btn">
+          <i class="fab fa-github"></i>
           GitHub
         </a>
 
         <a href="#" class="project-btn outline-btn">
+          <i class="far fa-file-alt"></i>
           Paper
         </a>
 
@@ -141,7 +192,9 @@ permalink: /projects/
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
   <!-- PROJECT FILTERS -->
   <section class="project-filters">
@@ -156,33 +209,135 @@ permalink: /projects/
   </section>
 
   <!-- PROJECT GRID -->
-  <section class="projects-grid">
+<section class="projects-grid">
 
-    <!-- CARD -->
-    <div class="project-card">
+  <!-- CARD 1 -->
+  <div class="project-card">
 
-      <img src="/images/project1.png" alt="Project">
+    <img src="/images/project1.png" alt="Project">
 
-      <div class="project-card-content">
+    <div class="project-card-content">
 
-        <h3>Autonomous Drone Navigation</h3>
+      <h3>Autonomous Drone Navigation</h3>
 
-        <p>
-          Vision-based autonomous navigation using
-          deep learning and sensor fusion.
-        </p>
+      <p>
+        Vision-based autonomous navigation using
+        deep learning and sensor fusion.
+      </p>
 
-        <div class="card-tags">
+      <div class="card-tags">
 
-          <span>ROS2</span>
-          <span>YOLO</span>
-          <span>PX4</span>
+        <span>ROS2</span>
+        <span>YOLOv8</span>
+        <span>PX4</span>
 
-        </div>
+      </div>
+
+      <div class="card-actions">
+
+        <a href="#">
+          <i class="fas fa-play-circle"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="#">
+          <i class="far fa-file-alt"></i>
+        </a>
 
       </div>
 
     </div>
+
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="project-card">
+
+    <img src="/images/project2.png" alt="Project">
+
+    <div class="project-card-content">
+
+      <h3>3D LiDAR Mapping</h3>
+
+      <p>
+        Real-time mapping and localization
+        using LiDAR and IMU fusion.
+      </p>
+
+      <div class="card-tags">
+
+        <span>SLAM</span>
+        <span>LOAM</span>
+        <span>PCL</span>
+
+      </div>
+
+      <div class="card-actions">
+
+        <a href="#">
+          <i class="fas fa-play-circle"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="#">
+          <i class="far fa-file-alt"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="project-card">
+
+    <img src="/images/project3.png" alt="Project">
+
+    <div class="project-card-content">
+
+      <h3>Manipulator Control</h3>
+
+      <p>
+        Robotic arm control with
+        trajectory planning and IK systems.
+      </p>
+
+      <div class="card-tags">
+
+        <span>ROS2</span>
+        <span>MoveIt2</span>
+        <span>IK</span>
+
+      </div>
+
+      <div class="card-actions">
+
+        <a href="#">
+          <i class="fas fa-play-circle"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="#">
+          <i class="far fa-file-alt"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
     <!-- DUPLICATE THIS CARD LATER -->
 
@@ -197,45 +352,75 @@ permalink: /projects/
 
     <div class="theory-grid">
 
-      <div class="theory-card">
+  <div class="theory-card">
 
-        <h3>Swarm Coordination Theory</h3>
+    <h3>
+      Swarm Coordination Theory
+    </h3>
 
-        <p>
-          Modeling and analysis of distributed
-          coordination in micro robot swarms.
-        </p>
+    <p>
+      Modeling and analysis of distributed
+      coordination in micro robot swarms.
+    </p>
 
-      </div>
+  </div>
 
-      <div class="theory-card">
+  <div class="theory-card">
 
-        <h3>Adaptive Control Systems</h3>
+    <h3>
+      Adaptive Control Systems
+    </h3>
 
-        <p>
-          Research on adaptive and learning
-          controllers for nonlinear systems.
-        </p>
+    <p>
+      Research on adaptive and learning
+      controllers for nonlinear systems.
+    </p>
 
-      </div>
+  </div>
 
-    </div>
+  <div class="theory-card">
+
+    <h3>
+      Bio-inspired Navigation
+    </h3>
+
+    <p>
+      Nature-inspired navigation algorithms
+      for autonomous robotics.
+    </p>
+
+  </div>
+
+  <div class="theory-card">
+
+    <h3>
+      Future Concepts
+    </h3>
+
+    <p>
+      Conceptual robotics architectures
+      and next-generation systems.
+    </p>
+
+  </div>
+
+</div>
 
   </section>
 
   <!-- CONTACT CTA -->
-  <section class="contact-cta">
+<section class="contact-cta">
 
-    <p>
-      Interested in collaboration,
-      research, or robotics systems development?
-    </p>
+  <p>
+    Interested in collaboration,
+    research, or robotics systems development?
+  </p>
 
-    <a href="/contact/" class="hero-btn cyan-btn">
-      CONTACT ME
-    </a>
+  <a href="/contact/" class="project-btn cyan-btn">
+    LET'S CONNECT
+  </a>
 
-  </section>
+</section>
 
   <!-- FOOTER -->
   <footer class="projects-footer">
