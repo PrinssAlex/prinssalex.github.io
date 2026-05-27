@@ -129,15 +129,22 @@ body.projects-page {
 }
 
 .logo-o {
-    color: #d4ff00;
+    color: #d4ff00 !important;
+}
+
+.pa {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.0;
+    margin-bottom: 35px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    color: #ffffff !important;
 }
 
 .nav-links {
-
     display: flex;
-
     gap: 45px;
-
     list-style: none;
 }
 
