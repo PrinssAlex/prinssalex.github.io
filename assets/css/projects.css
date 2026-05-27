@@ -93,14 +93,14 @@ body.projects-page {
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 60px;
+    padding: 0 80px;
 
     position: relative;
 
-    z-index: 100;
+    z-index: 5;
 }
 
-.logo {
+/* .logo {
 
     text-decoration: none;
 
@@ -111,11 +111,21 @@ body.projects-page {
     gap: 0;
 
     transition: 0.3s ease;
+}*/
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .logo:hover {
 
     opacity: 0.9;
+}
+
+.logo span {
+    color: white;
 }
 
 .logo-o {
@@ -126,21 +136,17 @@ body.projects-page {
 
     display: flex;
 
-    gap: 40px;
+    gap: 45px;
 
     list-style: none;
 }
 
 .nav-links a {
-
     text-decoration: none;
-
-    color: rgba(255,255,255,0.78);
-
-    font-size: 0.95rem;
-
+    color: #cfcfcf;
+    font-size: 0.9rem;
+    text-transform: uppercase;
     letter-spacing: 1px;
-
     transition: 0.3s ease;
 }
 
@@ -172,6 +178,10 @@ body.projects-page {
     background: #00e5ff;
 
     border-radius: 10px;
+}
+
+.profile-circle:hover {
+    transform: scale(1.05);
 }
 
 .profile-circle {
