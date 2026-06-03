@@ -759,7 +759,7 @@ body.projects-page {
       0 var(--page-padding)
       var(--section-spacing);
 
-    padding: 50px;
+    padding: 10px 25px;
 
     border:
       1px solid rgba(255,255,255,0.06);
@@ -795,8 +795,8 @@ body.projects-page {
     width: 100%;
 
     padding:
-      40px var(--page-padding)
-      60px;
+      20px var(--page-padding)
+      20px;
 
     border-top:
       1px solid rgba(255,255,255,0.05);
